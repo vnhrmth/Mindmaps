@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:S,mm:Q}=window,$=new S.Toolbar;$.attach(Q);const I=$.render();I.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(I)})})()</script><script>((l,U,M,R)=>{const N=l();window.mm=N.Markmap.create("svg#mindmap",(U||N.deriveOptions)(R),M),window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("markmap-dark")})(()=>window.markmap,null,{"content":"OpenSSL Architecture","children":[{"content":"1. libcrypto","children":[{"content":"<strong>What</strong>: Core cryptographic library.","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<strong>Functions</strong>:","children":[{"content":"Encryption/Decryption (AES, RSA, ECC)","children":[],"payload":{"tag":"li","lines":"5,6"}},{"content":"Hashing (SHA, MD5)","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"Key generation and management","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"Message digests and MACs","children":[],"payload":{"tag":"li","lines":"8,9"}}],"payload":{"tag":"li","lines":"4,9"}},{"content":"<strong>Why</strong>: Provides the building blocks for secure operations.","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"2. libssl","children":[{"content":"<strong>What</strong>: SSL/TLS protocol implementation.","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"<strong>Functions</strong>:","children":[{"content":"Secure socket communication","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"TLS handshake and session management","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"Certificate verification","children":[],"payload":{"tag":"li","lines":"16,17"}}],"payload":{"tag":"li","lines":"13,17"}},{"content":"<strong>Why</strong>: Enables secure communication over networks.","children":[],"payload":{"tag":"li","lines":"17,19"}}],"payload":{"tag":"h2","lines":"11,12"}},{"content":"3. OpenSSL Command-Line Tool","children":[{"content":"<strong>What</strong>: CLI interface to access libcrypto and libssl.","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"<strong>Functions</strong>:","children":[{"content":"Generate keys and certificates","children":[],"payload":{"tag":"li","lines":"22,23"}},{"content":"Convert formats (PEM, DER, PKCS12)","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"Test SSL/TLS connections","children":[],"payload":{"tag":"li","lines":"24,25"}}],"payload":{"tag":"li","lines":"21,25"}},{"content":"<strong>Why</strong>: Makes OpenSSL usable without programming.","children":[],"payload":{"tag":"li","lines":"25,27"}}],"payload":{"tag":"h2","lines":"19,20"}},{"content":"4. Engines","children":[{"content":"<strong>What</strong>: Plugin system for hardware acceleration or custom crypto.","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"<strong>Functions</strong>:","children":[{"content":"Use hardware security modules (HSMs)","children":[],"payload":{"tag":"li","lines":"30,31"}},{"content":"Integrate third-party crypto libraries","children":[],"payload":{"tag":"li","lines":"31,32"}}],"payload":{"tag":"li","lines":"29,32"}},{"content":"<strong>Why</strong>: Improves performance and flexibility.","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"h2","lines":"27,28"}},{"content":"5. Configuration System","children":[{"content":"<strong>What</strong>: Uses config files (e.g., <code>openssl.cnf</code>)","children":[],"payload":{"tag":"li","lines":"35,36"}},{"content":"<strong>Functions</strong>:","children":[{"content":"Define certificate policies","children":[],"payload":{"tag":"li","lines":"37,38"}},{"content":"Set default values for CSR","children":[],"payload":{"tag":"li","lines":"38,39"}}],"payload":{"tag":"li","lines":"36,39"}},{"content":"<strong>Why</strong>: Customizes behavior for different environments.","children":[],"payload":{"tag":"li","lines":"39,41"}}],"payload":{"tag":"h2","lines":"34,35"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
